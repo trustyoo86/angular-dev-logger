@@ -68,7 +68,7 @@ angular.module('myApp').controller('myController', function () {
 });
 ```
 
-If you $devLoggerProvider is true, window.console function is not operate.
+If you $devLoggerProvider is false, window.console function is not operate.
 
 ```js
 //config js
