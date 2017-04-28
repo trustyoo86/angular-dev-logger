@@ -61,10 +61,12 @@
            Logger.log = logFunc;
            Logger.error = logFunc;
            Logger.info = logFunc;
+           Logger.warn = logFunc;
          } else {
            Logger.log = function () { return false; };
            Logger.error = function () { return false; };
            Logger.info = function () { return false; };
+           Logger.warn = function () { return false; };
          }
        };
 
