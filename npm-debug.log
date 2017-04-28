@@ -1,0 +1,124 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/yoohanseung/workspace/kern/npm-modules/angular-dev-logger',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/yoohanseung/.npm correctMkdir not in flight; initializing
+10 info lifecycle angular-dev-logger@0.2.0~prepublish: angular-dev-logger@0.2.0
+11 silly lifecycle angular-dev-logger@0.2.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package.tgz',
+12 verbose tar pack   '/Users/yoohanseung/workspace/kern/npm-modules/angular-dev-logger' ]
+13 verbose tarball /Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package.tgz
+14 verbose folder /Users/yoohanseung/workspace/kern/npm-modules/angular-dev-logger
+15 verbose addLocalTarball adding from inside cache /Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package.tgz
+16 verbose correctMkdir /Users/yoohanseung/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd angular-dev-logger@0.2.0
+18 verbose afterAdd /Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/yoohanseung/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package/package.json written
+21 silly publish { name: 'angular-dev-logger',
+21 silly publish   version: '0.2.0',
+21 silly publish   description: 'angular development & production mode log support module',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'karma start' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/trustyoo86/angular-dev-logger.git' },
+21 silly publish   keywords:
+21 silly publish    [ 'angular',
+21 silly publish      'angular1.0',
+21 silly publish      'console',
+21 silly publish      'angular log',
+21 silly publish      'angular console',
+21 silly publish      'angular logger',
+21 silly publish      'angular module' ],
+21 silly publish   author: { name: 'KernYoo', url: 'trustyoo86@gmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies:
+21 silly publish    { angular: '^1.6.4',
+21 silly publish      'angular-animate': '^1.6.4',
+21 silly publish      chai: '^3.5.0',
+21 silly publish      karma: '^1.6.0',
+21 silly publish      mocha: '^3.3.0' },
+21 silly publish   devDependencies:
+21 silly publish    { 'angular-mocks': '^1.6.4',
+21 silly publish      'karma-chrome-launcher': '^2.0.0',
+21 silly publish      'karma-mocha': '^1.3.0' },
+21 silly publish   readme: 'Angular-dev-logger\n====\nAngular ver1.0 logger module.\nwindow.console control using $devLoggerProvider module.\n\nversion\n----\n0.1.0\n\ninstall\n----\n\n#### npm install\nYou can install using npm\n\n```bash\nnpm install angular-dev-logger --save-dev\nyarn install angular-dev-logger --dev\n```\n\n#### donwload source\n\n#### import script source(HTML)\n\n```html\n<script src="path/to/angular-dev-logger.js"></script>\n```\n\n#### using common js\n```js\nrequire(\'angular-dev-logger\');\n```\n\nusage\n----\n\n#### add dependecy on angular app\nIf you import source and using common js, add angular-dev-logger dependency on your angular app.\n\n```js\nrequire(\'angular-dev-logger\');\n\nangular.module(\'myApp\', [\n  \'angular-dev-logger\'\n]);\n```\n\n#### DebugMode\n\nIf you handle debugmode using angular-dev-logger, use angular config module.\n\n```js\nangular.module(\'myApp\').config(function ($devLoggerProvider) {\n});\n```\nIf you $devLoggerProvider is true, you can use window.console function.\n\n```js\nangular.module(\'myApp\').config(function ($devLoggerProvider) {\n  $devLoggerProvider.debugMode(true);\n});\n\n//controller.js\nangular.module(\'myApp\').controller(\'myController\', function () {\n  console.log(\'logger log\'); //logger log\n  console.error(\'logger error\'); //logger error\n  console.info(\'logger info\'); //logger info\n});\n```\n\nIf you $devLoggerProvider is false, window.console function is not operate.\n\n```js\n//config js\nangular.module(\'myApp\').config(function ($devLoggerProvider) {\n  $devLoggerProvider.debugMode(false);\n});\n\n//controller.js\nangular.module(\'myApp\').controller(\'myController\', function () {\n  console.log(\'logger log\'); //not operate\n  console.error(\'logger error\'); //not operate\n  console.info(\'logger info\'); //not operate\n});\n```\n\n# License\nMIT © [KernYoo](http://trustyoo86.github.io)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '49d5acef2c2dd70c821d0fa88d24acde44858ba0',
+21 silly publish   bugs: { url: 'https://github.com/trustyoo86/angular-dev-logger/issues' },
+21 silly publish   homepage: 'https://github.com/trustyoo86/angular-dev-logger#readme',
+21 silly publish   _id: 'angular-dev-logger@0.2.0',
+21 silly publish   _shasum: '100edbc510fb3166240fc63b6a7aae71a4c0495e',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name angular-dev-logger
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'angular-dev-logger',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'angular-dev-logger',
+26 silly mapToRegistry   name: 'angular-dev-logger',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/angular-dev-logger
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/yoohanseung/.npm/angular-dev-logger/0.2.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/angular-dev-logger
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 4:33:43 PM
+33 verbose request using bearer token for auth
+34 verbose request id 220a59c96f2e0928
+35 http request PUT https://registry.npmjs.org/angular-dev-logger
+36 http 403 https://registry.npmjs.org/angular-dev-logger
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 28 Apr 2017 07:33:44 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lax8644-LAX',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1493364825.533483,VS0,VE326',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/yoohanseung/.npm/registry.npmjs.org/angular-dev-logger on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.2.0." : angular-dev-logger
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid angular-dev-logger
+43 verbose cwd /Users/yoohanseung/workspace/kern/npm-modules/angular-dev-logger
+44 error Darwin 16.5.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 0.2.0." : angular-dev-logger
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
